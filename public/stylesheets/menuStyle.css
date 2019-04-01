@@ -1,0 +1,35 @@
+#myNavbar
+{
+    background-color: #000000;
+}
+
+nav.navbar-inverse
+{
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-width:1px;
+    border-bottom-style: ridge;
+}
+
+nav.navbar-inverse>div.container-fluid
+{
+    padding: 0px;
+}
+
+a.navbar-brand
+{
+    margin: 0;
+    color: #ffffff !important;
+}
+
+ul.dropdown-menu, ul.dropdown-menu>li>a
+{
+    background-color: #0f0f0f;
+}
+
+ul.dropdown-menu>li :hover
+{
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
