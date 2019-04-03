@@ -1,5 +1,7 @@
 <h2>Pagina principal2</h2>
 <h2>Lista</h2>
-<% for(cancion of cancionesList ){%>
-    <label><% cancion.titulo %></label>
-<% }%>
+<ul>
+    <% for(var video of listaVideos){%>
+        <li><%= video.titulo%></li>
+    <%}%>
+</ul>
