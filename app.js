@@ -41,6 +41,9 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/API', apiRouter);
 app.use('/about', aboutRouter);
+app.get('*', function (req, res) {
+  res.send('<h2>Pagina no localizada</h2>');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
