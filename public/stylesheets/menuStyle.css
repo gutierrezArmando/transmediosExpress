@@ -1,26 +1,23 @@
 #myNavbar
 {
-    background-color: #000000;
+    /* Colores a la barra de menu*/
+    background-color: #ffffff;
+    color: black;
+    font-size: x-large;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-nav.navbar-inverse
+#myNavbar>ul>li>a
 {
-    border: none;
-    margin: 0;
-    padding: 0;
-    border-width:1px;
-    border-bottom-style: ridge;
-}
-
-nav.navbar-inverse>div.container-fluid
-{
-    padding: 0px;
+    color: #000000;
 }
 
 a.navbar-brand
 {
-    margin: 0;
+    background-color: black;
     color: #ffffff !important;
+    font-size: x-large;
 }
 
 ul.dropdown-menu, ul.dropdown-menu>li>a
@@ -32,4 +29,11 @@ ul.dropdown-menu>li :hover
 {
     background-color: #0f0f0f;
     color: #ffffff;
+}
+
+/* Codigo para que la barra de menu abarque toda la pagina web*/
+.navbar-fixed-top>.container-fluid
+{
+    padding-left: 0px;
+    padding-right: 0px;
 }
