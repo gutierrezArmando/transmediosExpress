@@ -24,8 +24,6 @@ ul.dropdown-menu, ul.dropdown-menu>li>a
     background-color: #0f0f0f;
 }
 
-
-
 ul.dropdown-menu>li :hover
 {
     background-color: #0f0f0f;
@@ -45,27 +43,26 @@ ul>li.dropdown>a, ul>li>a
     padding-right: 0px;
 }
 
-.searchIcon
+#newLogoTv
 {
-    background-color: #000000;
+    background: #000000;
+    padding-top: 20%;
+    color: #ffffff !important;
+    display: inline-block;
+}
+
+/* 
+* Estilo para cambio de colores en la barra de menu
+* al colocar el raton sobre alguna opcion
+*/
+.menuItem :hover, .btnSearch > a
+{
+    background-color: #000000 !important;
     color: #ffffff !important;
 }
 
-
-#myNavbar>ul>li :hover, #myNavbar>ul>li :hover>a.searchIcon
+.btnSearch :hover
 {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
     color: #000000 !important;
-    /*
-    border-left: 1px solid #000000 !important;
-    */
-}
-
-#myNavbar>ul>li :hover, #myNavbar>ul>li :hover>a
-{
-    background-color: #000000;
-    color: #ffffff !important;
-    /*
-    border-left: 1px solid #000000 !important;
-    */
 }
