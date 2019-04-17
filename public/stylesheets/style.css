@@ -10,3 +10,22 @@ body
   background-color: #000000;
 }
 
+.miniSeccion > label
+{
+  font-size: 3vw;
+  color: #ffffff;
+}
+
+.miniSeccion > div
+{
+  padding: 5%;
+  /* The image used */
+  background-image: url("../images/tvStaticEffect.gif");
+  /* Full height */
+  width: 100%;
+  height: 100% !important; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
