@@ -35,7 +35,6 @@ ul>li.dropdown>a, ul>li>a
     background-color: #ffffff;
 }
 
-
 /* Codigo para que la barra de menu abarque toda la pagina web*/
 .navbar-fixed-top>.container-fluid
 {
@@ -65,4 +64,15 @@ ul>li.dropdown>a, ul>li>a
 {
     background-color: #ffffff !important;
     color: #000000 !important;
+}
+
+
+div.navbar-header>button
+{
+    border: 1px solid #ffffff;
+}
+
+div.navbar-header>button>span
+{
+    border: 1px solid #ffffff;
 }
