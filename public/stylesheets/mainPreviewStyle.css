@@ -10,7 +10,7 @@
 }
 
 /* Estilo para centrar en el gif preview el texto de transmedios tv*/
-.mainPreview > div > div > div
+.mainPreview > div > div > div, .textCentered
 {
     font-size: 8vw;
     background-color: #000000;
