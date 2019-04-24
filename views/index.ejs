@@ -1,21 +1,23 @@
-<!--
 
-<h2>Pagina principal2</h2>
-<h2>Lista</h2>
-<ul>
-    <% for(var video of listaVideos){%>
-        <li><%= video.titulo%></li>
-    <%}%>
-</ul>
--->
 
 <!-- Imagen principal de la página con el logo de TransmediosTV -->
 <% include partials/mainPreview %>
 
+<%- include('partials/noSignalLine',{text: false}) %>
+
 <!-- Imagenes principales correspondientes a cada sección -->
 <% include partials/mainSections %>
+<%- include('partials/noSignalLine',{text: true, string: 'Crónica de Eventos'}) %>
 
 <%- include('partials/noSignalLine',{text: false}) %>
+<%- include('partials/lineColor',{color: 'peach', string: 'Cultura', align: 'left'}) %>
+
+<%- include('partials/lineColor',{color: 'blue', string: 'Musica', align: 'right'}) %>
+
+<%- include('partials/lineColor',{color: 'red', string: 'Cine', align: 'left'}) %>
+
+<%- include('partials/lineColor',{color: 'green', string: 'Informativo', align: 'right'}) %>
+
+<%- include('partials/noSignalLine',{text: true, string: 'Tiempo Libre'}) %> -->
+
 <%- include('partials/noSignalLine',{text: false}) %>
-<%- include('partials/noSignalLine',{text: true, string: 'Crónica de Eventos'}) %>
-<%- include('partials/noSignalLine',{text: true, string: 'Tiempo Libre'}) %>

@@ -2,8 +2,8 @@ var express = require('express');
 var request = require('request');
 var router = express.Router();
 
-var url = 'http://localhost:3000/API';
-var canciones;
+//var url = 'http://localhost:3000/API';
+//var canciones;
 
 /*
 request({
@@ -18,6 +18,9 @@ request({
 });
 */
 /* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index');
+});
 /*
 router.get('/', function(req, res, next) {
   res.render('index', {listaVideos: [
@@ -46,6 +49,7 @@ router.get('/', (req, res, next) => {
   });
 });
 */
+/*
 router.get('/', function (req, res, next) {
   request.get({
     url: url,
@@ -58,7 +62,7 @@ router.get('/', function (req, res, next) {
     res.render('index', {listaVideos: response.body.data});
   });
 });
-
+*/
 module.exports = router;
 
 //https://stackoverflow.com/questions/48974520/render-api-response-body-content-with-node-js
