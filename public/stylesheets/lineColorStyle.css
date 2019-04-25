@@ -12,7 +12,7 @@
     height: 5px;
 }
 
-.left-text, .right-text
+.left-text, .right-text, .center-text
 {
     position:absolute;
     margin: 0px;
@@ -26,4 +26,11 @@
 .right-text
 {
     right: 0px;
+}
+
+.center-text
+{
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: -30px;
 }

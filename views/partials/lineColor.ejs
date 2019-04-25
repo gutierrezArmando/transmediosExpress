@@ -1,3 +1,9 @@
+<!-- 
+     Plantilla para dibujar una linea de color, con texto alineado
+     Uso:
+     include('partials/lineColor',{color: 'peach', string: 'Cultura', align: 'left'})
+ -->
+
 <% colorStyle=color;
 if(color === 'green')
      colorStyle='chartreuse';
@@ -9,6 +15,6 @@ if(color === 'blue')
 <div class="row">
     <div class="main-container">
         <div style="background-color: <%= colorStyle %>"></div>
-        <div class="<%= align==='left'?'left-text': align==='right'?'right-text':'' %>"><%= string %></div>
+        <div class="<%= align==='right'?'right-text':(align==='center'?'center-text':'left-text') %>"><%= string %></div>
     </div>
 </div>

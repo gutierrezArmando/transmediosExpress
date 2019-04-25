@@ -1,14 +1,20 @@
-<% if(text) { %>
-    <div class="row">
-        <div class="line-text">
-            <img src="images/noSignalBar.png">
-            <div><%= string %></div>
-        </div>
+<!-- 
+    Plantilla que dibuja una línea de colores (no signal) y dependiendo del parámetro tiene o no contiene texto
+    Usos:
+        Línea sin texto:
+            include('partials/noSignalLine',{text: false})
+        Línea con texto:
+            include('partials/noSignalLine',{text: true, string: 'Crónica de Eventos'})
+ -->
+<div class="row">
+    <% if(text) { %>
+    <div class="line-text">
+        <img src="images/noSignalBar.png">
+        <div><%= string %></div>
     </div>
-<% }else{ %>
-    <div class="row">
-        <div class="line-untext">
-            <img src="images/noSignalBar.png">
-        </div>
+    <% }else{ %>
+    <div class="line-untext">
+        <img src="images/noSignalBar.png">
     </div>
-<% } %>
+    <% } %>
+</div>
