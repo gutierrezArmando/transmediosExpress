@@ -1,10 +1,6 @@
-
-
-<!-- Imagen principal de la página con el logo de TransmediosTV -->
-<% include partials/mainPreview %>
-
+<%- include('partials/mainPreview'); %>
 <%- include('partials/noSignalLine',{text: false}) %>
 
-<!-- Imagenes principales correspondientes a cada sección -->
-<% include partials/mainSections %>
-<%- include('partials/lineColor',{color: 'blue', string: 'Música', align: 'center'}) %>
+<%- include('partials/seccion'); %>
+
+<%- include('partials/noSignalLine',{text: true, string: 'Música'}) %>
