@@ -1,31 +1,15 @@
-<div class="row" style="background-color: dodgerblue;">
+<div class="row">
   <div class="col-md-1">
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-backward"  style="border: red 2px solid"></span>
-          <!-- <span class="glyphicon glyphicon-chevron-left"  style="border: red 2px solid"></span> -->
-          <!-- <span class="sr-only"  style="border: red 2px solid">Previous</span> -->
-      </a>
+    <div style="background-color: darkgreen">
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-backward icon-backward"></span>
+            <!-- <span class="glyphicon glyphicon-chevron-left"  style="border: red 2px solid"></span> -->
+            <!-- <span class="sr-only"  style="border: red 2px solid">Previous</span> -->
+        </a>
+    </div>
   </div>
   <div class="col-md-10">
-    <div class="container">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <div>
-              <div style="display: inline-block; background-color: crimson; width: 200px; height: 200px; border: goldenrod 1px solid"></div>
-              <div style="display: inline-block; background-color: crimson; width: 200px; height: 200px;"></div>
-            </div>
-          </div>        
-          <div class="item">
-            <div>
-              <div style="display: inline-block; background-color:darkblue; width: 200px; height: 200px;"></div>
-              <div style="display: inline-block; background-color:darkblue; width: 200px; height: 200px;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <%- include('contentSection'); %>
   </div>
   <div class="col-md-1">
       <a class="right carousel-control" href="#myCarousel" data-slide="next">
