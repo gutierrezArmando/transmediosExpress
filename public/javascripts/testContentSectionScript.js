@@ -1,3 +1,4 @@
+var offset = 0;
 // duration of scroll animation
 var scrollDuration = 300;
 // paddles
@@ -39,6 +40,7 @@ $('.menu').on('scroll', function() {
 
 	// get how much of menu is invisible
 	menuInvisibleSize = menuSize - menuWrapperSize;
+
 	// get how much have we scrolled so far
 	var menuPosition = getMenuPosition();
 
@@ -67,6 +69,7 @@ $('.menu').on('scroll', function() {
 });
 
 // scroll to left
+/*
 $(rightPaddle).on('click', function() {
 	$('.menu').animate( { scrollLeft: menuInvisibleSize}, scrollDuration);
 });
@@ -75,3 +78,19 @@ $(rightPaddle).on('click', function() {
 $(leftPaddle).on('click', function() {
 	$('.menu').animate( { scrollLeft: '0' }, scrollDuration);
 });
+*/
+
+
+function fncScroll(typeLeftRight, id)
+{
+	if(typeLeftRight===1)
+	{
+		offset+=200;
+//		$('#'+id).animate( { scrollLeft: menuInvisibleSize}, scrollDuration);
+		$('#'+id).animate( { scrollLeft: offset}, scrollDuration);
+		
+	}
+	else
+		$('#'+id).animate( { scrollLeft: offset=0 }, scrollDuration);
+
+}
