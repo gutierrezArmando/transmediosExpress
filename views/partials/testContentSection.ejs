@@ -1,6 +1,7 @@
 
 <div class="menu-wrapper">
-    <ul id="menu-1" class="menu">
+    <!--<ul id="menu-1" class="menu">-->
+    <ul id="<%= nameId %>" class="menu">
         <li class="item">1</li>
         <li class="item">2</li>
         <li class="item">3</li>
@@ -15,10 +16,10 @@
     </ul>
     
     <div class="paddles">
-        <button class="left-paddle paddle hidden" onclick="fncScroll(0, 'menu-1')">
+        <button class="left-paddle paddle hidden" onclick="fncScroll(0, '<%= nameId%>')">
             <
         </button>
-        <button class="right-paddle paddle" onclick="fncScroll(1, 'menu-1')">
+        <button class="right-paddle paddle" onclick="fncScroll(1, '<%= nameId%>')">
             >
         </button>
     </div>
